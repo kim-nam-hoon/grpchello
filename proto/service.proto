@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "proto";
+
+service SayService {
+    rpc Greeting (SayRequest) returns (SayResponse);
+}
+
+message SayRequest {
+    string say = 1;
+}
+
+message SayResponse {
+    string say = 1;
+}
