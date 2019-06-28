@@ -21,7 +21,7 @@ func (*server) Greeting(ctx context.Context, req *proto.SayRequest) (*proto.SayR
 
 func main() {
 
-	lis, err := net.Listen("tcp", ":50051")
+	lis, err := net.Listen("tcp", ":80")
 	if err != nil {
 		log.Fatalf("Failed net Linsten : %v", err)
 	}
